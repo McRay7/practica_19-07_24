@@ -1,0 +1,67 @@
+.contenedor /*padre*/
+{
+    background-color: aqua;
+    padding: 10px;
+    display: grid;
+    font-size: 25px;
+    text-align: center;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "menu menu menu"
+                         "contenido contenido publi"
+                         "texto texto publi"
+                         "pie pie pie";
+
+}
+.contenedor>div
+{
+    background-color: chartreuse;
+}
+.contenedor .cabecera
+{
+    background-color: yellow;
+    grid-column: cabecera;
+
+}
+.contenedor .menu
+{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: beige;
+    grid-column: contenido;
+    padding: 10px;
+    display: grid;
+    font-size: 25px;
+    text-align: center;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"texto texto";
+
+}
+.contenedor .contenido .texto
+{
+    background-color: blue;
+    grid-column: texto;
+    
+}
+.contenedor .publi
+{
+    background-color: antiquewhite;
+    grid-column: publi;
+    
+}
+.contenedor .publi .texto1
+{
+    background-color: red;
+    grid-column: texto1;
+}
+.contenedor .pie
+{
+    background-color: darksalmon;
+    grid-column: pie;
+}
